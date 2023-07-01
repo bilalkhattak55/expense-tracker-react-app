@@ -1,8 +1,11 @@
 import React from 'react'
 import ExpenseItem from '../expenseItem/ExpenseItem'
 
-const ExpenseList = ({expenses}) => {
+const ExpenseList = ({expenses, getId}) => {
 
+  const editHandler =(id, method)=> {
+     getId(id, method)
+  }
   return (
 
     <>
@@ -16,6 +19,7 @@ const ExpenseList = ({expenses}) => {
                 title={expense.title}
                 price={expense.price}
                 date={expense.date}
+                getId={editHandler}
 
                 />
             ))

@@ -1,3 +1,9 @@
-.add-expense-btn {
-    width: 4rem;
+
+.form input {
+    background-color: #333;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-family: 'Roboto Mono', monospace;
+
 }

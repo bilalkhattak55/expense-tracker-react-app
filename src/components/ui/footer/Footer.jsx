@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import './style.css'
 
 const Footer = () => {
   return (
-    <div>
-      footer
+    <div className='footer text-center mt-5'>
+      <p>all rights reserved to &copy; BK</p>
     </div>
   )
 }
